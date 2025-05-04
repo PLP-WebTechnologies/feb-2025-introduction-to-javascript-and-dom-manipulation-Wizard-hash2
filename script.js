@@ -22,9 +22,9 @@ function Dynmically()
     })
 
     const remove = document.getElementById("Remov")
-    remove.addEventListener("click", () => {
-        
-
-    })
+    Remov.addEventListener("click", () => {
+    if (objects.lastElementChild) {
+        objects.removeChild(objects.lastElementChild);
+    }
     
 }
