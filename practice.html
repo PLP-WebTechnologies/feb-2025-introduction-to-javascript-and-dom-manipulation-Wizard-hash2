@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Greetings</h1>
+    <ul id = 'List'></ul>
+    <p id  = 'Message'> Click to change button</p>
+    <button id = 'btn'> click</button>
+    <script>
+        const Message = document.getElementById('Message');
+        const btn = document.getElementById('btn')
+        btn.addEventListener("click", () => {
+            Message.textContent ="Ypu have clicked the button";
+            const newItem = document.createElement("li") 
+            newItem.textContent = "newItem";
+            List.appendChild(newItem);
+        });
+        btn.addEventListener("dblclick", () => {
+            btn.textContent = "You have dbl click"
+        });
+
+       // console.log(ter.textContent)
+       // fer.textContent= "Hello everyone"; // updating contents
+      // fer.innerHTML = '<p>Dynamic contents</p>'
+      // fer.style.color = 'Blue';
+     //  fer.style.fontSize = '20px';
+
+       // creating an button that changes when clicked
+
+    </script>
+
+    
+</body>
+</html>
